@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>류지현 ♥ 박진 결혼합니다</title>
-    .title{
-    font-family:'Cormorant Garamond', serif;
-    font-size:42px;
-    letter-spacing:4px;
-    font-weight:600;
-    background: linear-gradient(45deg, #f8e1d4, #d4a373);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-<meta property="og:title" content="류지현 ♥ 박진 결혼합니다" />
-<meta property="og:description" content="2026년 3월 21일 토요일 오후 4시 50분 더 리버사이드호텔" />
-<meta property="og:image" content="https://baxjin98-creator.github.io/wedding/IMG_7908.jpeg" />
-<meta property="og:url" content="https://baxjin98-creator.github.io/wedding/" />
-<meta property="og:type" content="website" />
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
 body{
     margin:0;
@@ -28,139 +14,91 @@ body{
     background:#ffffff;
     text-align:center;
     color:#444;
-    line-height:2;
+    line-height:1.8;
 }
 
+/* 히어로 */
 .hero{
     position:relative;
     height:100vh;
-    background:url('IMG_7908.jpeg') center/cover no-repeat;
+    background:url('IMG_7908.jpeg') center center/cover no-repeat;
     display:flex;
     align-items:center;
     justify-content:center;
-    animation: zoomHero 20s ease-in-out infinite alternate;
-}
-
-@keyframes zoomHero {
-    from { background-size: 100%; }
-    to { background-size: 110%; }
 }
 
 .hero::after{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,0.25);
+    background:rgba(0,0,0,0.3);
 }
 
 .hero-content{
     position:relative;
     z-index:2;
     color:white;
-    text-align:center;
-    animation: fadeUp 2s ease forwards;
-    opacity:0;
-}
-
-@keyframes fadeUp {
-    from { opacity:0; transform:translateY(20px); }
-    to { opacity:1; transform:translateY(0); }
 }
 
 .save{
     font-family:'Cormorant Garamond', serif;
-    font-size:18px;
     letter-spacing:6px;
-    margin-bottom:20px;
+    font-size:18px;
 }
 
 .title{
     font-family:'Cormorant Garamond', serif;
-    font-size:42px;
-    letter-spacing:4px;
-    font-weight:600;
-    background: linear-gradient(45deg, #f8e1d4, #d4a373);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.heart{
-    color:#f1d6c6;
+    font-size:40px;
+    margin-top:15px;
 }
 
 .date{
-    margin-top:25px;
-    font-size:18px;
+    margin-top:20px;
+    font-size:16px;
 }
 
 .section{
-    padding:80px 28px;
+    padding:70px 25px;
 }
 
 img{
     width:100%;
-    height:auto;
     display:block;
 }
 
 .box{
     background:white;
-    margin:80px 25px;
-    padding:40px;
-    border-radius:30px;
-    box-shadow:0 30px 60px rgba(0,0,0,0.05);
-}
-
-.button{
-    display:inline-block;
-    margin:15px;
-    padding:16px 32px;
-    border-radius:40px;
-    font-size:14px;
-    text-decoration:none;
-    letter-spacing:2px;
-}
-
-.map{ background:#03C75A; color:white; }
-.kakao{ background:#FEE500; color:#3C1E1E; font-weight:600; }
-
-#countdown{
-    margin-top:15px;
-    font-size:14px;
+    margin:60px 20px;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.05);
 }
 </style>
 </head>
 
 <body>
 
-<!-- 👑 히어로 풀화면 -->
 <div class="hero">
   <div class="hero-content">
     <div class="save">SAVE THE DATE</div>
-    <div class="title">
-      RYU JIHYUN <span class="heart">♥</span> PARK JIN
-    </div>
-    <div id="countdown"></div>
-    <div class="date">
-      2026. 03. 21 SAT 4:50 PM
-    </div>
+    <div class="title">RYU JIHYUN ♥ PARK JIN</div>
+    <div class="date">2026. 03. 21 SAT 4:50 PM</div>
   </div>
 </div>
 
 <div class="section">
-    류세창 · 윤채영의 장남 류지현<br>
-    박준하(덕영) · 염봉란의 장녀 박진<br><br>
-
-    더 리버사이드호텔<br>
-    서울 서초구 강남대로107길 6
+류세창 · 윤채영의 장남 류지현<br>
+박준하(덕영) · 염봉란의 장녀 박진<br><br>
+더 리버사이드호텔<br>
+서울 서초구 강남대로107길 6
 </div>
 
 <div class="section">
-    순간이었지만 운명처럼 느껴졌습니다.<br>
-    사랑이 깊어 약속이 되었고,<br>
-    그 약속을 지키며 함께 걸어가려 합니다.<br><br>
-    저희의 새로운 시작을<br>
-    따뜻한 마음으로 축복해 주세요.
+순간이었지만 운명처럼 느껴졌습니다.<br>
+사랑이 깊어 약속이 되었고,<br>
+그 약속을 지키며 함께 걸어가려 합니다.<br><br>
+저희의 새로운 시작을<br>
+따뜻한 마음으로 축복해 주세요.
 </div>
 
 <img src="IMG_7593.jpeg">
@@ -173,44 +111,13 @@ img{
 <img src="IMG_7910.jpeg">
 <img src="IMG_7911.jpeg">
 
-<div class="section">
-    <a class="button map"
-    href="https://map.naver.com/v5/search/더%20리버사이드호텔"
-    target="_blank">
-    네이버 지도 보기
-    </a>
-
-    <a class="button kakao"
-    href="https://baxjin98-creator.github.io/wedding/"
-    target="_blank">
-    카카오톡 공유하기
-    </a>
-</div>
-
 <div class="box">
-    <div style="font-family:'Cormorant Garamond', serif; font-size:28px; letter-spacing:3px;">
-    마음 전하실 곳
-    </div>
-    <br>
-    신랑측<br>
-    국민은행 571501-01-312265<br>
-    예금주 : 류지현<br><br>
-
-    신부측<br>
-    기업은행 979-023595-01-012<br>
-    예금주 : 류지현
+<b>마음 전하실 곳</b><br><br>
+신랑측 국민은행 571501-01-312265<br>
+예금주 : 류지현<br><br>
+신부측 기업은행 979-023595-01-012<br>
+예금주 : 류지현
 </div>
-
-<script>
-const weddingDate = new Date("2026-03-21T16:50:00");
-const countdown = document.getElementById("countdown");
-setInterval(()=>{
-  const now = new Date();
-  const diff = weddingDate - now;
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  countdown.innerHTML = "Wedding Day까지 " + days + "일 남았습니다";
-},1000);
-</script>
 
 </body>
 </html>
