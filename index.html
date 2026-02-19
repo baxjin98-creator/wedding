@@ -7,7 +7,7 @@
 
 <meta property="og:title" content="류지현 ♥ 박진 결혼합니다" />
 <meta property="og:description" content="2026년 3월 21일 토요일 오후 4시 50분 더 리버사이드호텔" />
-<meta property="og:image" content="https://baxjin98-creator.github.io/wedding/IMG_7593.jpeg" />
+<meta property="og:image" content="https://baxjin98-creator.github.io/wedding/IMG_7908.jpeg" />
 <meta property="og:url" content="https://baxjin98-creator.github.io/wedding/" />
 <meta property="og:type" content="website" />
 
@@ -17,49 +17,67 @@
 body{
     margin:0;
     font-family:'Noto Serif KR', serif;
-    background: linear-gradient(to bottom, #fdf9f7, #ffffff);
+    background:#ffffff;
     text-align:center;
     color:#444;
     line-height:2;
 }
 
-.section{ padding:90px 28px; }
+/* 🔥 히어로 영역 */
+.hero{
+    position:relative;
+    height:100vh;
+    background:url('IMG_7908.jpeg') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.25); /* 고급 어두운 오버레이 */
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    text-align:center;
+}
 
 .save{
     font-family:'Cormorant Garamond', serif;
     font-size:18px;
     letter-spacing:6px;
-    color:#c6a48a;
     margin-bottom:20px;
 }
 
 .title{
     font-family:'Cormorant Garamond', serif;
-    font-size:40px;
+    font-size:42px;
     letter-spacing:4px;
     font-weight:600;
-    color:#c6a48a;
 }
 
-.heart{ font-size:28px; color:#d8b2a3; }
+.heart{
+    color:#f1d6c6;
+}
+
+.date{
+    margin-top:25px;
+    font-size:18px;
+}
+
+.section{
+    padding:80px 28px;
+}
 
 .subtitle{
     font-size:14px;
     color:#888;
-    margin-top:25px;
-}
-
-.date{
-    margin-top:35px;
-    font-size:18px;
-    letter-spacing:1px;
-}
-
-.divider{
-    width:60px;
-    height:1px;
-    background:#e5d6cf;
-    margin:35px auto;
+    margin-top:20px;
 }
 
 img{
@@ -90,40 +108,34 @@ img{
 .kakao{ background:#FEE500; color:#3C1E1E; font-weight:600; }
 
 #countdown{
-    margin-top:20px;
-    font-size:15px;
-    color:#b89c8c;
+    margin-top:15px;
+    font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
-<img src="IMG_7593.jpeg">
+<!-- 👑 히어로 풀화면 -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="save">SAVE THE DATE</div>
+    <div class="title">
+      RYU JIHYUN <span class="heart">♥</span> PARK JIN
+    </div>
+    <div id="countdown"></div>
+    <div class="date">
+      2026. 03. 21 SAT 4:50 PM
+    </div>
+  </div>
+</div>
 
 <div class="section">
+    류세창 · 윤채영의 장남 류지현<br>
+    박준하(덕영) · 염봉랑의 장녀 박진<br><br>
 
-    <div class="save">SAVE THE DATE</div>
-
-    <div class="title">
-        RYU JIHYUN <span class="heart">♥</span> PARK JIN
-    </div>
-
-    <div id="countdown"></div>
-
-    <div class="divider"></div>
-
-    <div class="subtitle">
-        류세창 · 윤채영의 장남 류지현<br>
-        박준하(덕영) · 염봉랑의 장녀 박진
-    </div>
-
-    <div class="date">
-        2026년 3월 21일 토요일 오후 4시 50분<br>
-        더 리버사이드호텔<br>
-        서울 서초구 강남대로107길 6
-    </div>
-
+    더 리버사이드호텔<br>
+    서울 서초구 강남대로107길 6
 </div>
 
 <div class="section">
@@ -134,13 +146,13 @@ img{
     따뜻한 마음으로 축복해 주세요.
 </div>
 
+<img src="IMG_7593.jpeg">
 <img src="IMG_7596.jpeg">
 <img src="IMG_7692.jpeg">
 <img src="IMG_7897.jpeg">
 <img src="IMG_7900.jpeg">
 <img src="IMG_7904.jpeg">
 <img src="IMG_7906.jpeg">
-<img src="IMG_7908.jpeg">
 <img src="IMG_7910.jpeg">
 <img src="IMG_7911.jpeg">
 
@@ -154,12 +166,12 @@ img{
     <a class="button kakao"
     href="https://baxjin98-creator.github.io/wedding/"
     target="_blank">
-    카카오톡으로 공유하기
+    카카오톡 공유하기
     </a>
 </div>
 
 <div class="box">
-    <div style="font-family:'Cormorant Garamond', serif; font-size:28px; letter-spacing:3px; color:#c6a48a;">
+    <div style="font-family:'Cormorant Garamond', serif; font-size:28px; letter-spacing:3px;">
     마음 전하실 곳
     </div>
     <br>
@@ -172,7 +184,6 @@ img{
     예금주 : 류지현
 </div>
 
-<!-- D-day -->
 <script>
 const weddingDate = new Date("2026-03-21T16:50:00");
 const countdown = document.getElementById("countdown");
@@ -184,56 +195,5 @@ setInterval(()=>{
 },1000);
 </script>
 
-<!-- ✨ 고급 샴페인 반짝이 효과 -->
-<script>
-const sparkleCanvas = document.createElement("canvas");
-document.body.appendChild(sparkleCanvas);
-const sctx = sparkleCanvas.getContext("2d");
-
-sparkleCanvas.style.position = "fixed";
-sparkleCanvas.style.top = 0;
-sparkleCanvas.style.left = 0;
-sparkleCanvas.style.pointerEvents = "none";
-sparkleCanvas.style.zIndex = 9999;   // 🔥 최상단 고정
-
-function resizeCanvas() {
-  sparkleCanvas.width = window.innerWidth;
-  sparkleCanvas.height = window.innerHeight;
-}
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
-
-let stars = [];
-
-for (let i = 0; i < 60; i++) {
-  stars.push({
-    x: Math.random() * sparkleCanvas.width,
-    y: Math.random() * sparkleCanvas.height,
-    r: Math.random() * 2 + 1,
-    alpha: Math.random(),
-    speed: Math.random() * 0.02 + 0.01
-  });
-}
-
-function drawSparkle() {
-  sctx.clearRect(0, 0, sparkleCanvas.width, sparkleCanvas.height);
-
-  for (let i = 0; i < stars.length; i++) {
-    let s = stars[i];
-
-    sctx.beginPath();
-    sctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-    sctx.fillStyle = "rgba(212,175,55," + s.alpha + ")"; // 💛 골드톤
-    sctx.fill();
-
-    s.alpha += s.speed;
-    if (s.alpha <= 0 || s.alpha >= 1) {
-      s.speed = -s.speed;
-    }
-  }
-
-  requestAnimationFrame(drawSparkle);
-}
-
-drawSparkle();
-</script>
+</body>
+</html>
