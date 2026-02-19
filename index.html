@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>류지현 ♥ 박진 결혼합니다</title>
+    .title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:42px;
+    letter-spacing:4px;
+    font-weight:600;
+    background: linear-gradient(45deg, #f8e1d4, #d4a373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 <meta property="og:title" content="류지현 ♥ 박진 결혼합니다" />
 <meta property="og:description" content="2026년 3월 21일 토요일 오후 4시 50분 더 리버사이드호텔" />
@@ -30,6 +39,25 @@ body{
     align-items:center;
     justify-content:center;
     animation: zoomHero 20s ease-in-out infinite alternate;
+    .hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    text-align:center;
+    animation: fadeUp 2s ease forwards;
+    opacity:0;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 }
 
 @keyframes zoomHero {
