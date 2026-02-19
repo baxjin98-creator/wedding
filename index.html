@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>류지현 ♥ 박진 결혼합니다</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 body{
@@ -81,9 +82,39 @@ img{
     margin:25px auto;
 }
 </style>
+    body{
+    margin:0;
+    font-family: 'Noto Serif KR', serif;
+    background: linear-gradient(to bottom, #fff8fb, #ffffff);
+    text-align:center;
+    color:#444;
+    line-height:1.9;
+}
+
+.title{
+    font-family: 'Playfair Display', serif;
+    font-size:34px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    font-size:15px;
+    color:#777;
+    margin-top:15px;
+}
+
+.date{
+    margin-top:25px;
+    font-size:18px;
+}
 </head>
 
 <body>
+    body{
+    background: linear-gradient(to bottom, #fff8fb, #ffffff);
+}
+</script>
 
 <img src="IMG_7593.jpeg">
 
@@ -204,6 +235,55 @@ p.x=Math.random()*canvas.width;
 }
 setInterval(draw,30);
 </script>
+<script>
+const canvas = document.createElement("canvas");
+document.body.appendChild(canvas);
+const ctx = canvas.getContext("2d");
 
+canvas.style.position = "fixed";
+canvas.style.top = 0;
+canvas.style.left = 0;
+canvas.style.pointerEvents = "none";
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let petals = [];
+
+for(let i=0;i<25;i++){
+  petals.push({
+    x: Math.random()*canvas.width,
+    y: Math.random()*canvas.height,
+    r: Math.random()*4+2,
+    d: Math.random()*1
+  });
+}
+
+function draw(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle="rgba(255,182,193,0.7)";
+  ctx.beginPath();
+  for(let i=0;i<petals.length;i++){
+    let p = petals[i];
+    ctx.moveTo(p.x,p.y);
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2,true);
+  }
+  ctx.fill();
+  update();
+}
+
+function update(){
+  for(let i=0;i<petals.length;i++){
+    let p = petals[i];
+    p.y += 0.5;
+    p.x += Math.sin(p.d);
+    if(p.y>canvas.height){
+      p.y=0;
+      p.x=Math.random()*canvas.width;
+    }
+  }
+}
+
+setInterval(draw,30);
+</script>
 </body>
 </html>
