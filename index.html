@@ -4,41 +4,53 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>류지현 ♥ 박진 결혼합니다</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 body{
     margin:0;
-    font-family: 'Apple SD Gothic Neo', sans-serif;
-    background: linear-gradient(to bottom, #fff8fb, #ffffff);
+    font-family:'Noto Serif KR', serif;
+    background: linear-gradient(to bottom, #fdf9f7, #ffffff);
     text-align:center;
     color:#444;
-    line-height:1.8;
+    line-height:2;
 }
 
 .section{
-    padding:60px 25px;
+    padding:70px 28px;
 }
 
 .title{
-    font-size:30px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:38px;
+    letter-spacing:3px;
     font-weight:600;
-    letter-spacing:1px;
+    color:#c6a48a;
 }
 
 .heart{
-    color:#d88ca0;
+    font-size:28px;
+    color:#d8b2a3;
 }
 
 .subtitle{
-    font-size:15px;
-    color:#777;
-    margin-top:15px;
+    font-size:14px;
+    color:#888;
+    margin-top:20px;
 }
 
 .date{
-    margin-top:25px;
+    margin-top:30px;
     font-size:18px;
+    letter-spacing:1px;
+}
+
+.divider{
+    width:50px;
+    height:1px;
+    background:#e5d6cf;
+    margin:30px auto;
 }
 
 img{
@@ -49,19 +61,24 @@ img{
 
 .box{
     background:white;
-    margin:40px 20px;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 20px 40px rgba(0,0,0,0.06);
+    margin:60px 25px;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.05);
 }
 
 .button{
     display:inline-block;
-    margin:10px;
-    padding:14px 24px;
-    border-radius:30px;
-    font-size:15px;
+    margin:12px;
+    padding:14px 28px;
+    border-radius:40px;
+    font-size:14px;
     text-decoration:none;
+    letter-spacing:1px;
+}
+
+.map{
+    background:#03C75A;
     color:white;
 }
 
@@ -70,57 +87,16 @@ img{
     color:#3C1E1E;
     font-weight:600;
 }
-
-.map{
-    background:#03C75A;
-}
-
-.divider{
-    width:40px;
-    height:2px;
-    background:#e8c9d2;
-    margin:25px auto;
-}
 </style>
-    body{
-    margin:0;
-    font-family: 'Noto Serif KR', serif;
-    background: linear-gradient(to bottom, #fff8fb, #ffffff);
-    text-align:center;
-    color:#444;
-    line-height:1.9;
-}
-
-.title{
-    font-family: 'Playfair Display', serif;
-    font-size:34px;
-    font-weight:600;
-    letter-spacing:2px;
-}
-
-.subtitle{
-    font-size:15px;
-    color:#777;
-    margin-top:15px;
-}
-
-.date{
-    margin-top:25px;
-    font-size:18px;
-}
 </head>
 
 <body>
-    body{
-    background: linear-gradient(to bottom, #fff8fb, #ffffff);
-}
-</script>
 
 <img src="IMG_7593.jpeg">
 
 <div class="section">
     <div class="title">
-        류지현 <span class="heart">♥</span> 박진
+        RYU JIHYUN <span class="heart">♥</span> PARK JIN
     </div>
 
     <div class="divider"></div>
@@ -145,7 +121,6 @@ img{
     따뜻한 마음으로 축복해 주세요.
 </div>
 
-<!-- 갤러리 -->
 <img src="IMG_7596.jpeg">
 <img src="IMG_7692.jpeg">
 <img src="IMG_7897.jpeg">
@@ -156,38 +131,35 @@ img{
 <img src="IMG_7910.jpeg">
 <img src="IMG_7911.jpeg">
 
-<!-- 지도 버튼 -->
 <div class="section">
     <a class="button map"
     href="https://map.naver.com/v5/search/더%20리버사이드호텔"
     target="_blank">
-    📍 네이버 지도 보기
+    네이버 지도 보기
+    </a>
+
+    <a class="button kakao"
+    href="https://share.kakao.com/"
+    target="_blank">
+    카카오톡 공유하기
     </a>
 </div>
 
-<!-- 계좌 -->
 <div class="box">
-    <div class="title">마음 전하실 곳</div>
+    <div style="font-family:'Cormorant Garamond', serif; font-size:26px; letter-spacing:2px; color:#c6a48a;">
+    마음 전하실 곳
+    </div>
     <br>
-    <strong>신랑측</strong><br>
+    신랑측<br>
     국민은행 571501-01-312265<br>
     예금주 : 류지현<br><br>
 
-    <strong>신부측</strong><br>
+    신부측<br>
     기업은행 979-023595-01-012<br>
     예금주 : 류지현
 </div>
 
-<!-- 카카오 공유 -->
-<div class="section">
-    <a class="button kakao"
-    href="https://share.kakao.com/"
-    target="_blank">
-    💛 카카오톡으로 공유하기
-    </a>
-</div>
-
-<!-- 꽃가루 효과 -->
+<!-- 꽃잎 -->
 <script>
 const canvas=document.createElement("canvas");
 document.body.appendChild(canvas);
@@ -200,18 +172,18 @@ canvas.width=window.innerWidth;
 canvas.height=window.innerHeight;
 
 let petals=[];
-for(let i=0;i<25;i++){
+for(let i=0;i<20;i++){
 petals.push({
 x:Math.random()*canvas.width,
 y:Math.random()*canvas.height,
-r:Math.random()*4+2,
+r:Math.random()*3+2,
 d:Math.random()*1
 });
 }
 
 function draw(){
 ctx.clearRect(0,0,canvas.width,canvas.height);
-ctx.fillStyle="rgba(255,182,193,0.6)";
+ctx.fillStyle="rgba(216,178,163,0.5)";
 ctx.beginPath();
 for(let i=0;i<petals.length;i++){
 let p=petals[i];
@@ -225,7 +197,7 @@ update();
 function update(){
 for(let i=0;i<petals.length;i++){
 let p=petals[i];
-p.y+=0.5;
+p.y+=0.4;
 p.x+=Math.sin(p.d);
 if(p.y>canvas.height){
 p.y=0;
@@ -235,55 +207,6 @@ p.x=Math.random()*canvas.width;
 }
 setInterval(draw,30);
 </script>
-<script>
-const canvas = document.createElement("canvas");
-document.body.appendChild(canvas);
-const ctx = canvas.getContext("2d");
 
-canvas.style.position = "fixed";
-canvas.style.top = 0;
-canvas.style.left = 0;
-canvas.style.pointerEvents = "none";
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-let petals = [];
-
-for(let i=0;i<25;i++){
-  petals.push({
-    x: Math.random()*canvas.width,
-    y: Math.random()*canvas.height,
-    r: Math.random()*4+2,
-    d: Math.random()*1
-  });
-}
-
-function draw(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-  ctx.fillStyle="rgba(255,182,193,0.7)";
-  ctx.beginPath();
-  for(let i=0;i<petals.length;i++){
-    let p = petals[i];
-    ctx.moveTo(p.x,p.y);
-    ctx.arc(p.x,p.y,p.r,0,Math.PI*2,true);
-  }
-  ctx.fill();
-  update();
-}
-
-function update(){
-  for(let i=0;i<petals.length;i++){
-    let p = petals[i];
-    p.y += 0.5;
-    p.x += Math.sin(p.d);
-    if(p.y>canvas.height){
-      p.y=0;
-      p.x=Math.random()*canvas.width;
-    }
-  }
-}
-
-setInterval(draw,30);
-</script>
 </body>
 </html>
