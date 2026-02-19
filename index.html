@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>류지현 ♥ 박진 결혼합니다</title>
 
@@ -11,29 +11,42 @@
 body{
     margin:0;
     font-family:'Noto Serif KR', serif;
-    background:#ffffff;
+    background:#f6efe8;
+    color:#4a403a;
     text-align:center;
-    color:#444;
-    line-height:1.8;
+    overflow-x:hidden;
 }
 
-/* 히어로 */
+/* ✨ 반짝이 */
+.sparkle{
+  position:fixed;
+  width:4px;
+  height:4px;
+  background:rgba(255,255,255,0.9);
+  border-radius:50%;
+  animation:sparkle 6s linear infinite;
+}
+@keyframes sparkle{
+  0%{transform:translateY(-10vh);opacity:0}
+  50%{opacity:1}
+  100%{transform:translateY(110vh);opacity:0}
+}
+
+/* 👑 히어로 */
 .hero{
     position:relative;
     height:100vh;
-    background:url('IMG_7908.jpeg') center center/cover no-repeat;
+    background:url('IMG_7908.jpeg') center/cover no-repeat;
     display:flex;
     align-items:center;
     justify-content:center;
 }
-
 .hero::after{
     content:"";
     position:absolute;
     inset:0;
     background:rgba(0,0,0,0.3);
 }
-
 .hero-content{
     position:relative;
     z-index:2;
@@ -48,17 +61,51 @@ body{
 
 .title{
     font-family:'Cormorant Garamond', serif;
-    font-size:40px;
-    margin-top:15px;
+    font-size:44px;
+    letter-spacing:4px;
+    margin:20px 0;
+    background:linear-gradient(45deg,#f8e1d4,#d4a373);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 .date{
-    margin-top:20px;
-    font-size:16px;
+    font-size:18px;
+}
+
+/* 📅 달력 */
+.calendar-wrap{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+.calendar{
+    width:120px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    background:white;
+}
+.calendar-top{
+    background:#c6a48a;
+    color:white;
+    padding:8px 0;
+    font-size:14px;
+    letter-spacing:2px;
+}
+.calendar-day{
+    font-size:44px;
+    padding:18px 0 10px;
+}
+.calendar-bottom{
+    font-size:14px;
+    padding-bottom:15px;
+    color:#888;
 }
 
 .section{
-    padding:70px 25px;
+    padding:80px 25px;
+    line-height:2;
 }
 
 img{
@@ -68,27 +115,56 @@ img{
 
 .box{
     background:white;
-    margin:60px 20px;
-    padding:35px;
+    margin:80px 25px;
+    padding:40px;
     border-radius:25px;
-    box-shadow:0 20px 40px rgba(0,0,0,0.05);
+    box-shadow:0 30px 60px rgba(0,0,0,0.08);
+}
+
+#countdown{
+    margin-top:15px;
+    font-size:15px;
+    color:#e6d3c3;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ✨ 반짝이 생성 -->
+<script>
+for(let i=0;i<50;i++){
+  let s=document.createElement("div");
+  s.className="sparkle";
+  s.style.left=Math.random()*100+"vw";
+  s.style.animationDuration=4+Math.random()*5+"s";
+  document.body.appendChild(s);
+}
+</script>
+
+<!-- 👑 히어로 -->
 <div class="hero">
   <div class="hero-content">
     <div class="save">SAVE THE DATE</div>
     <div class="title">RYU JIHYUN ♥ PARK JIN</div>
-    <div class="date">2026. 03. 21 SAT 4:50 PM</div>
+    <div class="date">2026.03.21 SAT 4:50 PM</div>
+
+    <!-- 📅 달력 -->
+    <div class="calendar-wrap">
+      <div class="calendar">
+        <div class="calendar-top">MAR</div>
+        <div class="calendar-day">21</div>
+        <div class="calendar-bottom">2026 SAT</div>
+      </div>
+    </div>
+
+    <div id="countdown"></div>
   </div>
 </div>
 
 <div class="section">
 류세창 · 윤채영의 장남 류지현<br>
-박준하(덕영) · 염봉란의 장녀 박진<br><br>
+박준하(덕영) · 염봉랑의 장녀 박진<br><br>
 더 리버사이드호텔<br>
 서울 서초구 강남대로107길 6
 </div>
@@ -118,6 +194,19 @@ img{
 신부측 기업은행 979-023595-01-012<br>
 예금주 : 류지현
 </div>
+
+<!-- ⏳ D-day -->
+<script>
+const weddingDate = new Date("2026-03-21T16:50:00");
+const countdown = document.getElementById("countdown");
+
+setInterval(()=>{
+  const now = new Date();
+  const diff = weddingDate - now;
+  const days = Math.floor(diff / (1000*60*60*24));
+  countdown.innerHTML = "Wedding Day까지 " + days + "일 남았습니다";
+},1000);
+</script>
 
 </body>
 </html>
